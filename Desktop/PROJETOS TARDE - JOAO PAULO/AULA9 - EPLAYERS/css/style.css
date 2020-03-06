@@ -80,9 +80,15 @@ header img{
 
 .partidas .container{
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end ;
+    justify-content: space-around;
+    
     flex-flow: wrap;
+}
+.proximas_partidas{
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: flex-end;
 }
 
 .partida{
@@ -155,7 +161,7 @@ header img{
     background-size: cover;
     background-attachment: fixed;
     width: 100%;
-    min-height: 700px;
+    min-height: 500px;
     clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
    
 }
@@ -175,9 +181,10 @@ header img{
     position: absolute;
     z-index: 99;
     top: -20px;
-    left: 100px;
+    left: 300px;
     width: 100%;
-    max-width: 35%;
+    max-width: 30%;
+    
 }
 .texto_sobre{
     width: 40%;
@@ -393,4 +400,59 @@ select{
     margin: 2em auto;
     /*esse comando atua na linha que ele manda (10) linha 10*/
 }
+
+
+/*INÍCIO RESPONSIVIDADES*/
+/* 800 PX*/
+
+@media(max-width: 800px){
+   .container{
+       width: 90%;
+    }
+    header .container img{
+        max-width: 180px;
+    }
+    
+    }
+    .patidas .container{
+        flex-flow: nowrap;
+        align-items: flex-start;
+       
+    }
+    .em_andamento{
+        width: 30%;
+    }
+    .proximas_partidas{
+        width: 70%;
+        flex-flow: wrap;
+    }
+    .ligas h4{
+        font-size: 30px;
+    }
+    .ligas h3{
+        font-size: 60px;
+    }
+    .ligas img{
+        height: 90px;
+    }
+    .sobre img{
+        max-width: 50%;
+        left: 10px;
+        margin-top: 90px;
+        
+    }
+    .texto_sobre{
+        width: 50%;
+        margin-right: 50px;
+    }
+    .content{
+        margin-top: 30px;
+    }
+
+
+
+}/*fim media query 800px*/
+
+
+
 

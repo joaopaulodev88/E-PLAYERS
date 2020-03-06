@@ -401,6 +401,10 @@ select{
     margin: 2em auto;
     /*esse comando atua na linha que ele manda (10) linha 10*/
 }
+header .fa-bars{
+    display: none;
+}
+}
 
 
 /*INÍCIO RESPONSIVIDADES*/
@@ -414,7 +418,7 @@ select{
         max-width: 180px;
     }
     
-    }
+    
     .patidas .container{
         flex-flow: nowrap;
         align-items: flex-start;
@@ -456,10 +460,43 @@ select{
     .resultado p{
         margin-top: 0.5em;
     }
-}/*fim media query 800px*/
+}
+/*fim media query 800px*/
+
+/*MOBILE*/
 
 @media(max-width: 460px){
-
+    header .fa-bars{
+        color: var(--purple);
+        font-size: 3em;
+        display: block;
+    }
+    header .container div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    header .container div a{
+        margin-left: 3em;
+    }
+    #menu{
+        position: absolute;
+        top: 5.5em;
+        left: 0;
+        width: 100%;
+        background-color: var(--purple);
+        display: none;
+    }
+    #menu ul{
+        flex-direction: column;
+        height: 300px;
+        margin-left: 1em;
+    }
+    #menu a{
+        padding: 0.5em 0;
+        display: block;
+        
+    }
 }
 
 

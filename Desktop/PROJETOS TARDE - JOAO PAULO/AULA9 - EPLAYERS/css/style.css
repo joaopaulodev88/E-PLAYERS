@@ -50,6 +50,7 @@ header ul{
     list-style-type: none;
     justify-content: space-between;
     flex-flow: wrap;
+    
 }
 
 header nav{
@@ -201,7 +202,7 @@ header img{
     justify-content: space-between;
 }
 .content section{
-    width: 60%;
+    width: 70%;
 
 }
 
@@ -407,7 +408,7 @@ select{
 
 @media(max-width: 800px){
    .container{
-       width: 90%;
+       width: 95%;
     }
     header .container img{
         max-width: 180px;
@@ -438,7 +439,7 @@ select{
     .sobre img{
         max-width: 50%;
         left: 10px;
-        margin-top: 90px;
+        margin-top: 80px;
         
     }
     .texto_sobre{
@@ -448,10 +449,18 @@ select{
     .content{
         margin-top: 30px;
     }
-
-
-
+    .card img{
+        margin-top: 3em;
+        margin-left: 1em;
+    }
+    .resultado p{
+        margin-top: 0.5em;
+    }
 }/*fim media query 800px*/
+
+@media(max-width: 460px){
+
+}
 
 
 
